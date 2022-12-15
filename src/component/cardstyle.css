@@ -1,0 +1,20 @@
+.music-card{
+    transition: all 220ms ease;
+    position: relative;
+}
+.music-card:hover{
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.134);
+}
+.play-icon{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    opacity: 0;
+    transition: all 220ms ease;
+    z-index: 1;
+}
+.music-card:hover .play-icon{
+    opacity: 1;
+    transform: translateY(-10%);
+}
